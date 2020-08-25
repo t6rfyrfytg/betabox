@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>BeepBox Modded 1.6</title>
+	<title>BeepBox Modded (28/5/2017 rev4)</title>
 	<meta name="description" content="BeepBox is an online tool for sketching and sharing chiptune melodies. " />
 	<meta name="keywords" content="chiptune, music, melody, composition, tool, square wave, NES, NSF, BeepBox, beepbox" />
 	<meta name="viewport" content="width=700">
@@ -41,10 +41,10 @@
 <body bgcolor="#000000">
 	<div class="centerDiv" style="width: 700px">
 
-		<div id="beepboxEditorContainer" style="width: 100px; height: 645px;"></div>
+		<div id="beepboxEditorContainer" style="width: 700px; height: 645px;"></div>
 
 		<h1>
-			BeepBox Modded 1.6
+			BeepBox Modded (28/5/2017 rev4)
 		</h1>
 		<p id="introduction">
 			BeepBox is an online tool for sketching and sharing chiptune melodies.
@@ -52,6 +52,7 @@
 		<p>
 			All song data is packaged into the URL at the top of your browser. When you make changes to the song, the URL is updated
 			to reflect your changes. When you are satisfied with your song, just copy and paste the URL to save and share your song!
+			In Modded BeepBox, only copy from the # sign onwards for sharing, as of now.
 		</p>
 
 		<div>
@@ -89,7 +90,7 @@
 					below an existing note to enable a rapid arpeggio/trill effect, oscillating between two or more simultaneous notes.
 				</p>
 				<p>
-					AVDANCED: Drag vertically from an existing note to bend its pitch, or drag vertically from above or below the note to adjust
+					ADVANCED: Drag vertically from an existing note to bend its pitch, or drag vertically from above or below the note to adjust
 					its volume.
 				</p>
 				<p>
@@ -105,11 +106,11 @@
 					BeepBox is developed by <a href="http://www.johnnesky.com">John Nesky</a>, also known as <a href="https://twitter.com/shaktool">@shaktool</a>.
 				</p>
 				<p>
-					BeepBox and Beepbox Modded do not claim ownership over songs created with it, so original songs belong to their authors.
+					BeepBox does not claim ownership over songs created with it, so original songs belong to their authors.
 				</p>
 				<p>
-					Neither John Nesky, BeepBox, nor the Beepbox Modded Dev Team assume responsibility for any copyrighted material played on BeepBox. No songs are ever received,
-					recorded, or distributed by BeepBox or Beepbox Modded's servers. All song data is contained in the URL after the hash (#) mark, and BeepBox
+					Neither John Nesky nor BeepBox assume responsibility for any copyrighted material played on BeepBox. No songs are ever received,
+					recorded, or distributed by BeepBox's servers. All song data is contained in the URL after the hash (#) mark, and BeepBox
 					running inside your browser converts that data into sound waves.
 				</p>
 				<p>
@@ -126,43 +127,22 @@
 					BeepBox Modded Changelog
 				</p>
 				<p> 
-				    25/5/17 1.0.0 - Project started. Original PWM idea failed and became "glitch" instrument. Monotonic scale, arpfest rhythm, and spinner chorus also added.
+				    25/5/17 - Project started. Original PWM idea failed and became "glitch" instrument. Monotonic scale, arpfest rhythm, and spinner chorus also added.
 				</p>
 				<p>
-					25/5/17 1.0.1 - "Sunsoft bass" instrument added.
+					25/5/17 rev1 - "sunsoft bass" instrument added.
 				</p>
 				<p>
-					26/5/17 1.0.2 - "Loud pulse" and "sax" instruments added.
+					26/5/17 - (Added by theepicosity) "loud pulse" and "sax" instruments added.
 				</p>
 				<p>
-					26/5/17 1.1.0 - Detune chorus, smaller arpfest rhythm added. Max size for Bars, Instruments, Beats and Patterns increased.
+					26/5/17 rev2 - Detune chorus, smaller arpfest rhythm added. Max size for Bars, Instruments, Beats and Patterns increased.
 				</p>
 				<p>
-					26/5/17 1.2.0 - Ninths, sixths, and fifths added as rhythms. 9/4 , 6/4 , and 5/4 galore!
+					26/5/17 rev3 - (Added by theepicosity) ninths, sixths, and fifths added as rhythms. 9/4 , 6/4 , andn 5/4 galore.
 				</p>
 				<p>
-					26/5/17 1.3.0 - Updated to the newest version of BeepBox vanilla, the "reverb update". Riff instrument, new filters and effects added.
-				</p>
-				<p>
-					29/5/17 1.3.1 - More scales, including challenge and challenge+. Check it out!
-				</p>
-				<p>
-					29/5/17 1.3.2 - Fixed bugs with max values. Riff instrument removed.
-				</p>
-				<p>
-					9/6/17 1.4.0 - Beepbox Modded is live! Fixed bugs with modded urls and other things.
-				</p>
-				<p>
-					13/6/17 1.4.1 - Added a cool new color scheme from the old beepbox days!
-				</p>
-				<p>
-					14/6/17 1.5.0 - Added two new envelopes, "trill" and "click". This changelog also look nicer thatnks to Parad0xGamer!
-				</p>
-				<p>
-					14/6/17 1.5.1 - Small Patch Update to fix issues with effects.
-				</p>
-				<p>
-					9/7/17 1.6.0 - New riff feature added! Sine wave instrument, bass effects and submerged decay also added.
+					26/5/17 rev4 - Updated to the newest version of BeepBox vanilla, the "reverb update". Riff instrument, new filters and effects added as well by theepicosity.
 				</p>
 			</div>
 			<div style="width: 300px; float: right;">
@@ -327,7 +307,7 @@ var beepbox;
         }
         return Music;
     }());
-    Music.scaleNames = ["easy :)", "easy :(", "island :)", "island :(", "blues :)", "blues :(", "normal :)", "normal :(", "romani :)", "romani :(", "enigma", "expert", "monotonic c", "monotonic g", "beep bishop", "challenge", "challenge+", "enigma+"];
+    Music.scaleNames = ["easy :)", "easy :(", "island :)", "island :(", "blues :)", "blues :(", "normal :)", "normal :(", "romani :)", "romani :(", "enigma", "expert", "monotonic", "beep bishop"];
     Music.scaleFlags = [
         [true, false, true, false, true, false, false, true, false, true, false, false],
         [true, false, false, true, false, true, false, true, false, false, true, false],
@@ -339,14 +319,10 @@ var beepbox;
         [true, false, true, true, false, true, false, true, true, false, true, false],
         [true, true, false, false, true, true, false, true, true, false, true, false],
         [true, false, true, true, false, false, true, true, true, false, false, true],
-		[true, false, true, false, true, false, true, false, true, false, true, false],
+        [true, false, true, false, true, false, true, false, true, false, true, false],
         [true, true, true, true, true, true, true, true, true, true, true, true],
 		[true, false, false, false, false, false, false, false, false, false, false, false],
-		[false, false, false, false, false, false, false, true, false, false, false, false],
 		[true, true, false, true, true, true, true, true, true, false, true, false],
-		[false, true, true, true, true, true, true, true, true, true, true, true],
-		[false, true, true, true, true, true, true, false, true, true, true, true],
-		[true, true, false, true, true, false, true, true, false, true, true, false],
     ];
     Music.pianoScaleFlags = [true, false, true, false, true, true, false, true, false, true, false, true];
     Music.blackKeyNameParents = [-1, 1, -1, 1, -1, 1, -1, -1, 1, -1, 1, -1];
@@ -355,37 +331,32 @@ var beepbox;
     Music.keyTransposes = [23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12];
     Music.tempoNames = ["molasses", "slow", "leisurely", "moderate", "steady", "brisk", "hasty", "fast", "strenuous", "grueling", "hyper", "ludicrous"];
     Music.reverbRange = 4;
-	Music.riffRange = 4;
-    Music.beatsMin = 1;
-    Music.beatsMax = 16;
+    Music.beatsMin = 3;
+    Music.beatsMax = 15;
     Music.barsMin = 1;
-    Music.barsMax = 255;
+    Music.barsMax = 128;
     Music.patternsMin = 1;
     Music.patternsMax = 64;
     Music.instrumentsMin = 1;
-    Music.instrumentsMax = 64;
+    Music.instrumentsMax = 10;
     Music.partNames = ["triples", "standard", "arpfest", "smaller arpfest", "ninths", "sixths", "fifths"];
     Music.partCounts = [3, 4, 16, 12, 9, 6, 5];
-	Music.waveNames = ["triangle", "square", "pulse wide", "pulse narrow", "sawtooth", "double saw", "double pulse", "spiky", "plateau", "glitch", "10% pulse", "sunsoft bass", "loud pulse", "sax", "guitar", "sine"];
-    Music.waveVolumes = [1.0, 0.5, 0.5, 0.5, 0.65, 0.5, 0.4, 0.4, 0.94, 0.5, 0.5, 1.0, 0.6, 0.2, 0.5, 1.0];
-    Music.drumNames = ["retro", "white"];
-    Music.drumVolumes = [0.25, 1.0];
-    Music.filterNames = ["sustain sharp", "sustain medium", "sustain soft", "decay sharp", "decay medium", "decay soft", "ring", "muffled", "submerged"];
-    Music.filterBases = [2.0, 3.5, 5.0, 1.0, 2.5, 4.0, -1.0, 4.0, 6.0];
-    Music.filterDecays = [0.0, 0.0, 0.0, 10.0, 7.0, 4.0, 0.2, 0.2, 0.3];
-    Music.filterVolumes = [0.4, 0.7, 1.0, 0.5, 0.75, 1.0, 0.5, 0.75, 0.4];
-    Music.attackNames = ["binary", "sudden", "smooth", "slide", "trill", "click", "bow"];
-    Music.effectNames = ["none", "vibrato light", "vibrato delayed", "vibrato heavy", "tremelo light", "tremelo heavy", "alien", "stutter", "strum"];
-    Music.effectVibratos = [0.0, 0.15, 0.3, 0.45, 0.0, 0.0, 1.0, 0.0, 0.05];
-    Music.effectTremelos = [0.0, 0.0, 0.0, 0.0, 0.25, 0.5, 0.0, 1.0, 0.025];
-	Music.bassNames = ["plain", "deep", "shallow", "heavy", "light"];
-    Music.bassVolumes = [0.0, 0.0, 0.0, 0.0, 0.0];
-	Music.bassValues = [0.0, 0.0, 0.0, 3.5, 7.0];
-	Music.bassOffsets = [1.0, 0.0, 2.0, 0.0, 0.0];
-    Music.chorusNames = ["union", "shimmer", "hum", "honky tonk", "dissonant", "fifths", "octaves", "spinner", "detune", "bowed", "rising", "vibrate"];
-    Music.chorusValues = [0.0, 0.02, 0.05, 0.1, 0.25, 3.5, 6, 0.02, 0.0, 0.02, 1.0, 3.5];
-    Music.chorusOffsets = [0.0, 0.0, 0.0, 0.0, 0.0, 3.5, 6, 0.0, 0.25, 0.0, 0.7, 7];
-    Music.chorusVolumes = [0.7, 0.8, 1.0, 1.0, 0.9, 0.9, 0.8, 1.0, 1.0, 1.0, 0.9, 0.95];
+Music.waveNames = ["triangle", "square", "pulse wide", "pulse narrow", "sawtooth", "double saw", "double pulse", "spiky", "plateau", "glitch", "10% pulse", "sunsoft bass", "loud pulse", "sax", "riff"];
+    Music.waveVolumes = [1.0, 0.5, 0.5, 0.5, 0.65, 0.5, 0.4, 0.4, 0.94, 0.5, 0.5, 1.0, 0.6, 0.2, 0.5];
+    Music.drumNames = ["retro", "white", "brown (experimental)"];
+    Music.drumVolumes = [0.25, 1.0, 1.0];
+    Music.filterNames = ["sustain sharp", "sustain medium", "sustain soft", "decay sharp", "decay medium", "decay soft", "ring", "muffled"];
+    Music.filterBases = [2.0, 3.5, 5.0, 1.0, 2.5, 4.0, -1.0, 4.0];
+    Music.filterDecays = [0.0, 0.0, 0.0, 10.0, 7.0, 4.0, 0.2, 0.2];
+    Music.filterVolumes = [0.4, 0.7, 1.0, 0.5, 0.75, 1.0, 1.0, 0.75];
+    Music.attackNames = ["binary", "sudden", "smooth", "slide"];
+    Music.effectNames = ["none", "vibrato light", "vibrato delayed", "vibrato heavy", "tremelo light", "tremelo heavy", "alien", "cutoff"];
+    Music.effectVibratos = [0.0, 0.15, 0.3, 0.45, 0.0, 0.0, 10.0, 0.0];
+    Music.effectTremelos = [0.0, 0.0, 0.0, 0.0, 0.25, 0.5, 0.0, 10.0];
+    Music.chorusNames = ["union", "shimmer", "hum", "honky tonk", "dissonant", "fifths", "octaves", "spinner", "detune", "bowed"];
+    Music.chorusValues = [0.0, 0.02, 0.05, 0.1, 0.25, 3.5, 6, 0.02, 0.0, 0.02];
+    Music.chorusOffsets = [0.0, 0.0, 0.0, 0.0, 0.0, 3.5, 6, 0.0, 0.25, 0.0];
+    Music.chorusVolumes = [0.7, 0.8, 1.0, 1.0, 0.9, 0.9, 0.8, 1.0, 1.0, 1.0];
     Music.volumeNames = ["loudest", "loud1", "loud", "medium1", "medium", "quiet1", "quiet", "quietest1", "quietest", "mute"];
     Music.volumeValues = [0.0, 0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0, -1.0];
     Music.channelVolumes = [0.27, 0.27, 0.27, 0.19];
@@ -468,14 +439,12 @@ var beepbox;
             this.instrumentAttacks = [[1], [1], [1], [1]];
             this.instrumentEffects = [[0], [0], [0], [0]];
             this.instrumentChorus = [[0], [0], [0], [0]];
-			this.instrumentBassFX = [[0], [0], [0], [0]];
             this.scale = 0;
             this.key = Music.keyNames.length - 1;
             this.loopStart = 0;
             this.loopLength = 4;
             this.tempo = 7;
             this.reverb = 0;
-			this.riff = 0;
             this.beats = 8;
             this.bars = 16;
             this.patterns = 8;
@@ -494,7 +463,6 @@ var beepbox;
             result += "e" + base64[(this.loopLength - 1) >> 6] + base64[(this.loopLength - 1) & 0x3f];
             result += "t" + base64[this.tempo];
             result += "m" + base64[this.reverb];
-			result += "q" + base64[this.riff];
             result += "a" + base64[this.beats - 1];
             result += "g" + base64[(this.bars - 1) >> 6] + base64[(this.bars - 1) & 0x3f];
             result += "j" + base64[this.patterns - 1];
@@ -524,11 +492,6 @@ var beepbox;
             for (channel = 0; channel < Music.numChannels; channel++)
                 for (var i = 0; i < this.instruments; i++) {
                     result += base64[this.instrumentChorus[channel][i]];
-                }
-            result += "z";
-            for (channel = 0; channel < Music.numChannels; channel++)
-                for (var i = 0; i < this.instruments; i++) {
-                    result += base64[this.instrumentBassFX[channel][i]];
                 }
             result += "v";
             for (channel = 0; channel < Music.numChannels; channel++)
@@ -743,10 +706,6 @@ var beepbox;
                     this.reverb = base64.indexOf(compressed.charAt(charIndex++));
                     this.reverb = this._clip(0, Music.reverbRange, this.reverb);
                 }
-                else if (command == "q") {
-                    this.riff = base64.indexOf(compressed.charAt(charIndex++));
-                    this.riff = this._clip(0, Music.riffRange, this.riff);
-                }
                 else if (command == "a") {
                     if (beforeThree) {
                         this.beats = [6, 7, 8, 9, 10][base64.indexOf(compressed.charAt(charIndex++))];
@@ -836,19 +795,6 @@ var beepbox;
                         for (channel = 0; channel < Music.numChannels; channel++) {
                             for (var i = 0; i < this.instruments; i++) {
                                 this.instrumentChorus[channel][i] = this._clip(0, Music.chorusNames.length, base64.indexOf(compressed.charAt(charIndex++)));
-                            }
-                        }
-                    }
-                }
-                else if (command == "z") {
-                    if (beforeThree) {
-                        channel = base64.indexOf(compressed.charAt(charIndex++));
-                        this.instrumentBassFX[channel][0] = this._clip(0, Music.bassNames.length, base64.indexOf(compressed.charAt(charIndex++)));
-                    }
-                    else {
-                        for (channel = 0; channel < Music.numChannels; channel++) {
-                            for (var i = 0; i < this.instruments; i++) {
-                                this.instrumentBassFX[channel][i] = this._clip(0, Music.bassNames.length, base64.indexOf(compressed.charAt(charIndex++)));
                             }
                         }
                     }
@@ -1100,7 +1046,6 @@ var beepbox;
                             envelope: Music.attackNames[this.instrumentAttacks[channel][i]],
                             filter: Music.filterNames[this.instrumentFilters[channel][i]],
                             chorus: Music.chorusNames[this.instrumentChorus[channel][i]],
-							bass: Music.bassNames[this.instrumentBassFX[channel][i]],
                             effect: Music.effectNames[this.instrumentEffects[channel][i]],
                         });
                     }
@@ -1160,7 +1105,6 @@ var beepbox;
                 ticksPerBeat: this.parts,
                 beatsPerMinute: this.getBeatsPerMinute(),
                 reverb: this.reverb,
-				riff: this.riff,
                 channels: channelArray,
             };
         };
@@ -1205,9 +1149,6 @@ var beepbox;
             if (jsonObject.reverb != undefined) {
                 this.reverb = this._clip(0, Music.reverbRange, jsonObject.reverb | 0);
             }
-            if (jsonObject.riff != undefined) {
-                this.riff = this._clip(0, Music.riffRange, jsonObject.riff | 0);
-            }
             if (jsonObject.beatsPerBar != undefined) {
                 this.beats = Math.max(Music.beatsMin, Math.min(Music.beatsMax, jsonObject.beatsPerBar | 0));
             }
@@ -1251,7 +1192,6 @@ var beepbox;
                 this.instrumentAttacks[channel].length = this.instruments;
                 this.instrumentFilters[channel].length = this.instruments;
                 this.instrumentChorus[channel].length = this.instruments;
-				this.instrumentBassFX[channel].length = this.instruments;
                 this.instrumentEffects[channel].length = this.instruments;
                 this.channelPatterns[channel].length = this.patterns;
                 this.channelBars[channel].length = this.bars;
@@ -1276,17 +1216,7 @@ var beepbox;
                             this.instrumentWaves[channel][i] = 0;
                         this.instrumentFilters[channel][i] = 0;
                         this.instrumentChorus[channel][i] = 0;
-						this.instrumentChorus[channel][i] = 0;
                         this.instrumentEffects[channel][i] = 0;
-                    }
-                    else if (channel == 2) {
-                        this.instrumentWaves[channel][i] = Music.waveNames.indexOf(instrumentObject.wave);
-                        if (this.instrumentWaves[channel][i] == -1)
-                            this.instrumentWaves[channel][i] = 1;
-                        this.instrumentFilters[channel][i] = 1;
-                        this.instrumentChorus[channel][i] = 1;
-						this.instrumentBassFX[channel][i] = 1;
-                        this.instrumentEffects[channel][i] = 1;
                     }
                     else {
                         this.instrumentWaves[channel][i] = Music.waveNames.indexOf(instrumentObject.wave);
@@ -1459,8 +1389,7 @@ var beepbox;
 				new Float64Array([0.0, 0.1875, 0.3125, 0.5625, 0.5, 0.75, 0.875, 1.0, 1.0, 0.6875, 0.5, 0.625, 0.625, 0.5, 0.375, 0.5625, 0.4375, 0.5625, 0.4375, 0.4375, 0.3125, 0.1875, 0.1875, 0.375, 0.5625, 0.5625, 0.5625, 0.5625, 0.5625, 0.4375, 0.25, 0.0]),
 				new Float64Array([1.0, 0.7, 0.1, 0.1, 0, 0, 0, 0, 0, 0.1, 0.2, 0.15, 0.25, 0.125, 0.215, 0.345, 4.0]),
 				new Float64Array([1.0 / 15.0, 3.0 / 15.0, 5.0 / 15.0, 9.0, 0.06]),
-				new Float64Array([-0.5, 3.5, 3.0, -0.5, -0.25, -1.0]),
-				new Float64Array([0.0, 0.05, 0.125, 0.2, 0.25, 0.3, 0.425, 0.475, 0.525, 0.625, 0.675, 0.725, 0.775, 0.8, 0.825, 0.875, 0.9, 0.925, 0.95, 0.975, 0.98, 0.99, 0.995, 1, 0.995, 0.99, 0.98, 0.975, 0.95, 0.925, 0.9, 0.875, 0.825, 0.8, 0.775, 0.725, 0.675, 0.625, 0.525, 0.475, 0.425, 0.3, 0.25, 0.2, 0.125, 0.05, 0.0, -0.05, -0.125, -0.2, -0.25, -0.3, -0.425, -0.475, -0.525, -0.625, -0.675, -0.725, -0.775, -0.8, -0.825, -0.875, -0.9, -0.925, -0.95, -0.975, -0.98, -0.99, -0.995, -1, -0.995, -0.99, -0.98, -0.975, -0.95, -0.925, -0.9, -0.875, -0.825, -0.8, -0.775, -0.725, -0.675, -0.625, -0.525, -0.475, -0.425, -0.3, -0.25, -0.2, -0.125, -0.05]),
+				new Float64Array([1.0, -0.9, 0.8, -0.7, 0.6, -0.5, 0.4, -0.3, 0.2, -0.1, 0.0, -0.1, 0.2, -0.3, 0.4, -0.5, 0.6, -0.7, 0.8, -0.9, 1.0]),
             ];
             this._drumWaves = [new Float32Array(32767), new Float32Array(32767)];
             this.song = null;
@@ -1729,7 +1658,6 @@ var beepbox;
             var volume = this.volume;
             var delayLine = this._delayLine;
             var reverb = Math.pow(this.song.reverb / Music.reverbRange, 0.667) * 0.425;
-			var riff = Math.pow(this.song.riff / Music.riffRange, 0.667) * 0.425;
             if (this._arpeggioSamples == 0 || this._arpeggioSamples > samplesPerArpeggio) {
                 this._arpeggioSamples = samplesPerArpeggio;
             }
@@ -1786,9 +1714,6 @@ var beepbox;
             var leadChorusSign;
             var harmChorusSign;
             var bassChorusSign;
-			var bassA
-			var bassB
-			var bassSign
             var updateInstruments = function () {
                 var instrumentLead = _this.song.getPatternInstrument(0, _this._bar);
                 var instrumentHarm = _this.song.getPatternInstrument(1, _this._bar);
@@ -1812,18 +1737,15 @@ var beepbox;
                 leadTremeloScale = Music.effectTremelos[_this.song.instrumentEffects[0][instrumentLead]];
                 harmTremeloScale = Music.effectTremelos[_this.song.instrumentEffects[1][instrumentHarm]];
                 bassTremeloScale = Music.effectTremelos[_this.song.instrumentEffects[2][instrumentBass]];
-                leadChorusA = Math.pow(2.0, (Music.chorusOffsets[_this.song.instrumentChorus[0][instrumentLead]] + Music.chorusValues[_this.song.instrumentChorus[0][instrumentLead]] * (riff + 1)) / 12.0);
-                harmChorusA = Math.pow(2.0, (Music.chorusOffsets[_this.song.instrumentChorus[1][instrumentHarm]] + Music.chorusValues[_this.song.instrumentChorus[1][instrumentHarm]] * (riff + 1)) / 12.0);
-                bassChorusA = Math.pow(2.0, (Music.chorusOffsets[_this.song.instrumentChorus[2][instrumentBass]] + Music.chorusValues[_this.song.instrumentChorus[2][instrumentBass]] * (riff + 1)) / 12.0);
-                leadChorusB = Math.pow(2.0, (Music.chorusOffsets[_this.song.instrumentChorus[0][instrumentLead]] - Music.chorusValues[_this.song.instrumentChorus[0][instrumentLead]] * (riff + 1)) / 12.0);
-                harmChorusB = Math.pow(2.0, (Music.chorusOffsets[_this.song.instrumentChorus[1][instrumentHarm]] - Music.chorusValues[_this.song.instrumentChorus[1][instrumentHarm]] * (riff + 1)) / 12.0);
-                bassChorusB = Math.pow(2.0, (Music.chorusOffsets[_this.song.instrumentChorus[2][instrumentBass]] - Music.chorusValues[_this.song.instrumentChorus[2][instrumentBass]] * (riff + 1)) / 12.0);
+                leadChorusA = Math.pow(2.0, (Music.chorusOffsets[_this.song.instrumentChorus[0][instrumentLead]] + Music.chorusValues[_this.song.instrumentChorus[0][instrumentLead]]) / 12.0);
+                harmChorusA = Math.pow(2.0, (Music.chorusOffsets[_this.song.instrumentChorus[1][instrumentHarm]] + Music.chorusValues[_this.song.instrumentChorus[1][instrumentHarm]]) / 12.0);
+                bassChorusA = Math.pow(2.0, (Music.chorusOffsets[_this.song.instrumentChorus[2][instrumentBass]] + Music.chorusValues[_this.song.instrumentChorus[2][instrumentBass]]) / 12.0);
+                leadChorusB = Math.pow(2.0, (Music.chorusOffsets[_this.song.instrumentChorus[0][instrumentLead]] - Music.chorusValues[_this.song.instrumentChorus[0][instrumentLead]]) / 12.0);
+                harmChorusB = Math.pow(2.0, (Music.chorusOffsets[_this.song.instrumentChorus[1][instrumentHarm]] - Music.chorusValues[_this.song.instrumentChorus[1][instrumentHarm]]) / 12.0);
+                bassChorusB = Math.pow(2.0, (Music.chorusOffsets[_this.song.instrumentChorus[2][instrumentBass]] - Music.chorusValues[_this.song.instrumentChorus[2][instrumentBass]]) / 12.0);
                 leadChorusSign = (_this.song.instrumentChorus[0][instrumentLead] == 7) ? -1.0 : 1.0;
                 harmChorusSign = (_this.song.instrumentChorus[1][instrumentHarm] == 7) ? -1.0 : 1.0;
                 bassChorusSign = (_this.song.instrumentChorus[2][instrumentBass] == 7) ? -1.0 : 1.0;
-				bassA = Math.pow(2.0, (Music.bassOffsets[_this.song.instrumentBassFX[2][instrumentBass]] + Music.bassValues[_this.song.instrumentBassFX[2][instrumentBass]]) / 12.0);
-				bassB = Math.pow(2.0, (Music.bassOffsets[_this.song.instrumentBassFX[2][instrumentBass]] - Music.bassValues[_this.song.instrumentBassFX[2][instrumentBass]]) / 12.0);
-				bassSign = (_this.song.instrumentBassFX[2][instrumentBass] == 7) ? -1.0 : 1.0;
                 if (_this.song.instrumentChorus[0][instrumentLead] == 0)
                     _this._leadPeriodB = _this._leadPeriodA;
                 if (_this.song.instrumentChorus[1][instrumentHarm] == 0)
@@ -1898,6 +1820,8 @@ var beepbox;
                     var periodDeltaScale = void 0;
                     var toneVolume = void 0;
                     var volumeDelta = void 0;
+                    var filter = void 0;
+                    var filterScale = void 0;
                     var vibratoScale = void 0;
                     var resetPeriod = false;
                     if (this.pianoPressed && channel == this.pianoChannel) {
@@ -1919,6 +1843,8 @@ var beepbox;
                         periodDeltaScale = 1.0;
                         toneVolume = Math.pow(2.0, -this.pianoNote * intervalScale / pianoPitchDamping);
                         volumeDelta = 0.0;
+                        filter = 1.0;
+                        filterScale = 1.0;
                         vibratoScale = Math.pow(2.0, Music.effectVibratos[this.song.instrumentEffects[channel][pattern.instrument]] / 12.0) - 1.0;
                     }
                     else if (tone == null) {
@@ -1979,15 +1905,6 @@ var beepbox;
                             else if (attack == 2) {
                                 arpeggioVolumeStart = 0.0;
                             }
-                            else if (attack == 4) {
-                                arpeggioVolumeEnd = 0.0
-							}
-                            else if (attack == 5) {
-                                arpeggioIntervalStart = 100.0
-							}
-                            else if (attack == 6) {
-                                arpeggioIntervalStart = -1.0
-							}
                             else if (attack == 3) {
                                 if (prevTone == null || prevTone.notes.length > 1 || tone.notes.length > 1) {
                                     arpeggioVolumeStart = 0.0;
@@ -2105,8 +2022,6 @@ var beepbox;
                         drumPeriodDeltaScale = periodDeltaScale;
                         drumVolume = toneVolume * maxDrumVolume;
                         drumVolumeDelta = volumeDelta * maxDrumVolume;
-                        bassFilter = filter * bassFilterBase;
-                        bassFilterScale = filterScale;
                     }
                 }
                 var effectY = Math.sin(this._effectPeriod);
@@ -2138,10 +2053,10 @@ var beepbox;
                     var temp = effectY;
                     effectY = effectYMult * effectY - prevEffectY;
                     prevEffectY = temp;
-                    leadSample += (((leadWave[0 | (leadPeriodA * leadWaveLength)] + leadWave[0 | (leadPeriodB * leadWaveLength)] * leadChorusSign) * leadVolume * leadTremelo - leadSample) * leadFilter);
-                    harmSample += (((harmWave[0 | (harmPeriodA * harmWaveLength)] + harmWave[0 | (harmPeriodB * harmWaveLength)] * harmChorusSign) * harmVolume * harmTremelo - harmSample) * harmFilter);
-                    bassSample += ((((bassWave[0 | (bassPeriodA * bassWaveLength)] + bassWave[0 | (bassPeriodB * bassWaveLength)] * bassChorusSign) * bassSign) * bassVolume * bassTremelo - bassSample) * bassFilter);
-                    drumSample += ((drumWave[0 | (drumPeriod * 32767.0)] * drumVolume - drumSample) * drumFilter);
+                    leadSample += ((leadWave[0 | (leadPeriodA * leadWaveLength)] + leadWave[0 | (leadPeriodB * leadWaveLength)] * leadChorusSign) * leadVolume * leadTremelo - leadSample) * leadFilter;
+                    harmSample += ((harmWave[0 | (harmPeriodA * harmWaveLength)] + harmWave[0 | (harmPeriodB * harmWaveLength)] * harmChorusSign) * harmVolume * harmTremelo - harmSample) * harmFilter;
+                    bassSample += ((bassWave[0 | (bassPeriodA * bassWaveLength)] + bassWave[0 | (bassPeriodB * bassWaveLength)] * bassChorusSign) * bassVolume * bassTremelo - bassSample) * bassFilter;
+                    drumSample += (drumWave[0 | (drumPeriod * 32767.0)] * drumVolume - drumSample) * drumFilter;
                     leadVolume += leadVolumeDelta;
                     harmVolume += harmVolumeDelta;
                     bassVolume += bassVolumeDelta;
@@ -2150,8 +2065,8 @@ var beepbox;
                     leadPeriodB += leadPeriodDelta * leadVibrato * leadChorusB;
                     harmPeriodA += harmPeriodDelta * harmVibrato * harmChorusA;
                     harmPeriodB += harmPeriodDelta * harmVibrato * harmChorusB;
-                    bassPeriodA += bassPeriodDelta * bassVibrato * bassChorusA * bassA;
-                    bassPeriodB += bassPeriodDelta * bassVibrato * bassChorusB * bassB;
+                    bassPeriodA += bassPeriodDelta * bassVibrato * bassChorusA;
+                    bassPeriodB += bassPeriodDelta * bassVibrato * bassChorusB;
                     drumPeriod += drumPeriodDelta;
                     leadPeriodDelta *= leadPeriodDeltaScale;
                     harmPeriodDelta *= harmPeriodDeltaScale;
@@ -2176,10 +2091,10 @@ var beepbox;
                     var delayTemp1 = -delaySample0 - delaySample1;
                     var delayTemp2 = -delaySample2 + delaySample3;
                     var delayTemp3 = -delaySample2 - delaySample3;
-                    delayFeedback0 += ((delayTemp0 + delayTemp2) * reverb - delayFeedback0) * 0.5 + (riff * 0.05);
-                    delayFeedback1 += ((delayTemp1 + delayTemp3) * reverb - delayFeedback1) * 0.5 + (riff * 0.05);
-                    delayFeedback2 += ((delayTemp0 - delayTemp2) * reverb - delayFeedback2) * 0.5 + (riff * 0.05);
-                    delayFeedback3 += ((delayTemp1 - delayTemp3) * reverb - delayFeedback3) * 0.5 + (riff * 0.05);
+                    delayFeedback0 += ((delayTemp0 + delayTemp2) * reverb - delayFeedback0) * 0.5;
+                    delayFeedback1 += ((delayTemp1 + delayTemp3) * reverb - delayFeedback1) * 0.5;
+                    delayFeedback2 += ((delayTemp0 - delayTemp2) * reverb - delayFeedback2) * 0.5;
+                    delayFeedback3 += ((delayTemp1 - delayTemp3) * reverb - delayFeedback3) * 0.5;
                     delayLine[(delayPos + 3037) & 0x3FFF] = delayFeedback0;
                     delayLine[(delayPos + 6410) & 0x3FFF] = delayFeedback1;
                     delayLine[(delayPos + 10903) & 0x3FFF] = delayFeedback2;
@@ -2861,30 +2776,6 @@ var beepbox;
         return ChangeChorus;
     }(Change));
     beepbox.ChangeChorus = ChangeChorus;
-    var ChangeBass = (function (_super) {
-        __extends(ChangeBass, _super);
-        function ChangeBass(document, Bass) {
-            var _this = _super.call(this, false) || this;
-            _this._document = document;
-            _this._oldBass = document.song.instrumentBassFX[document.channel][document.getCurrentInstrument()];
-            _this._newBass = Bass;
-            if (_this._oldBass != _this._newBass) {
-                _this._didSomething();
-                _this.redo();
-            }
-            return _this;
-        }
-        ChangeBass.prototype._doForwards = function () {
-            this._document.song.instrumentBassFX[this._document.channel][this._document.getCurrentInstrument()] = this._newBass;
-            this._document.changed();
-        };
-        ChangeBass.prototype._doBackwards = function () {
-            this._document.song.instrumentBassFX[this._document.channel][this._document.getCurrentInstrument()] = this._oldBass;
-            this._document.changed();
-        };
-        return ChangeBass;
-    }(Change));
-    beepbox.ChangeBass = ChangeBass;
     var ChangeEffect = (function (_super) {
         __extends(ChangeEffect, _super);
         function ChangeEffect(document, effect) {
@@ -2946,17 +2837,15 @@ var beepbox;
                 _this._oldInstrumentAttacks = document.song.instrumentAttacks;
                 _this._oldInstrumentEffects = document.song.instrumentEffects;
                 _this._oldInstrumentChorus = document.song.instrumentChorus;
-				_this._oldInstrumentBassFX = document.song.instrumentBassFX;
                 _this._oldInstrumentVolumes = document.song.instrumentVolumes;
                 _this._newInstrumentWaves = [];
                 _this._newInstrumentFilters = [];
                 _this._newInstrumentAttacks = [];
                 _this._newInstrumentEffects = [];
                 _this._newInstrumentChorus = [];
-				_this._newInstrumentBass = [];
                 _this._newInstrumentVolumes = [];
-                var oldArrays = [_this._oldInstrumentWaves, _this._oldInstrumentFilters, _this._oldInstrumentAttacks, _this._oldInstrumentEffects, _this._oldInstrumentChorus, _this._oldInstrumentBassFX, _this._oldInstrumentVolumes];
-                var newArrays = [_this._newInstrumentWaves, _this._newInstrumentFilters, _this._newInstrumentAttacks, _this._newInstrumentEffects, _this._newInstrumentChorus, _this._newInstrumentBassFX, _this._newInstrumentVolumes];
+                var oldArrays = [_this._oldInstrumentWaves, _this._oldInstrumentFilters, _this._oldInstrumentAttacks, _this._oldInstrumentEffects, _this._oldInstrumentChorus, _this._oldInstrumentVolumes];
+                var newArrays = [_this._newInstrumentWaves, _this._newInstrumentFilters, _this._newInstrumentAttacks, _this._newInstrumentEffects, _this._newInstrumentChorus, _this._newInstrumentVolumes];
                 for (var k = 0; k < newArrays.length; k++) {
                     var oldArray = oldArrays[k];
                     var newArray = newArrays[k];
@@ -3006,7 +2895,6 @@ var beepbox;
             this._document.song.instrumentAttacks = this._newInstrumentAttacks;
             this._document.song.instrumentEffects = this._newInstrumentEffects;
             this._document.song.instrumentChorus = this._newInstrumentChorus;
-			this._document.song.instrumentBassFX = this._newInstrumentBassFX;
             this._document.song.instrumentVolumes = this._newInstrumentVolumes;
             this._copyIndices(this._newInstrumentIndices);
             this._document.changed();
@@ -3018,7 +2906,6 @@ var beepbox;
             this._document.song.instrumentAttacks = this._oldInstrumentAttacks;
             this._document.song.instrumentEffects = this._oldInstrumentEffects;
             this._document.song.instrumentChorus = this._oldInstrumentChorus;
-			this._document.song.instrumentBassFX = this._oldInstrumentBassFX;
             this._document.song.instrumentVolumes = this._oldInstrumentVolumes;
             this._copyIndices(this._oldInstrumentIndices);
             this._document.changed();
@@ -3541,30 +3428,6 @@ var beepbox;
         return ChangeReverb;
     }(Change));
     beepbox.ChangeReverb = ChangeReverb;
-    var ChangeRiff = (function (_super) {
-        __extends(ChangeRiff, _super);
-        function ChangeRiff(document, riff) {
-            var _this = _super.call(this, false) || this;
-            _this._document = document;
-            _this._oldRiff = document.song.riff;
-            _this._newRiff = riff;
-            if (_this._oldRiff != _this._newRiff) {
-                _this._didSomething();
-                _this.redo();
-            }
-            return _this;
-        }
-        ChangeRiff.prototype._doForwards = function () {
-            this._document.song.riff = this._newRiff;
-            this._document.changed();
-        };
-        ChangeRiff.prototype._doBackwards = function () {
-            this._document.song.riff = this._oldRiff;
-            this._document.changed();
-        };
-        return ChangeRiff;
-    }(Change));
-    beepbox.ChangeRiff = ChangeRiff;
     var ChangeToneAdded = (function (_super) {
         __extends(ChangeToneAdded, _super);
         function ChangeToneAdded(document, bar, tone, index, deletion) {
@@ -6264,7 +6127,6 @@ var beepbox;
                                         description += ", envelope: " + beepbox.Music.attackNames[song.instrumentAttacks[channel][nextInstrument]];
                                         description += ", filter: " + beepbox.Music.filterNames[song.instrumentFilters[channel][nextInstrument]];
                                         description += ", chorus: " + beepbox.Music.chorusNames[song.instrumentChorus[channel][nextInstrument]];
-										description += ", bass: " + beepbox.Music.bassNames[song.instrumentBass[channel][nextInstrument]];
                                         description += ", effect: " + beepbox.Music.effectNames[song.instrumentEffects[channel][nextInstrument]];
                                         writeAscii(description);
                                         var sustainInstruments = [
@@ -6564,7 +6426,6 @@ var beepbox;
             this._keyDropDown = buildOptions(select({ style: "width:9em;" }), beepbox.Music.keyNames);
             this._tempoSlider = input({ style: "width: 9em; margin: 0px;", type: "range", min: "0", max: "11", value: "7", step: "1" });
             this._reverbSlider = input({ style: "width: 9em; margin: 0px;", type: "range", min: "0", max: "3", value: "0", step: "1" });
-			this._riffSlider = input({ style: "width: 9em; margin: 0px;", type: "range", min: "0", max: "3", value: "0", step: "1" });
             this._partDropDown = buildOptions(select({ style: "width:9em;" }), beepbox.Music.partNames);
             this._patternSettingsLabel = div({ style: "visibility: hidden; margin: 3px 0; text-align: center;" }, [text("Pattern Settings")]);
             this._instrumentDropDown = select({ style: "width:9em;" });
@@ -6575,13 +6436,11 @@ var beepbox;
             this._drumNames = buildOptions(select({ style: "width:9em;" }), beepbox.Music.drumNames);
             this._attackDropDown = buildOptions(select({ style: "width:9em;" }), beepbox.Music.attackNames);
             this._filterDropDown = buildOptions(select({ style: "width:9em;" }), beepbox.Music.filterNames);
-            this._filterDropDownGroup = div({ className: "selectRow" }, [span({}, [text("Decay: ")]), div({ className: "selectContainer" }, [this._filterDropDown])]);
+            this._filterDropDownGroup = div({ className: "selectRow" }, [span({}, [text("Filter: ")]), div({ className: "selectContainer" }, [this._filterDropDown])]);
             this._chorusDropDown = buildOptions(select({ style: "width:9em;" }), beepbox.Music.chorusNames);
             this._chorusDropDownGroup = div({ className: "selectRow" }, [span({}, [text("Chorus: ")]), div({ className: "selectContainer" }, [this._chorusDropDown])]);
             this._effectDropDown = buildOptions(select({ style: "width:9em;" }), beepbox.Music.effectNames);
-            this._effectDropDownGroup = div({ className: "selectRow" }, [span({}, [text("Vibratos: ")]), div({ className: "selectContainer" }, [this._effectDropDown])]);
-            this._bassDropDown = buildOptions(select({ style: "width:9em;" }), beepbox.Music.bassNames);
-            this._bassDropDownGroup = div({ className: "selectRow" }, [span({}, [text("Bass: ")]), div({ className: "selectContainer" }, [this._bassDropDown])]);
+            this._effectDropDownGroup = div({ className: "selectRow" }, [span({}, [text("Effect: ")]), div({ className: "selectContainer" }, [this._effectDropDown])]);
             this._instrumentSettingsGroup = div({}, [
                 div({ className: "selectRow" }, [
                     span({}, [text("Volume: ")]),
@@ -6598,7 +6457,6 @@ var beepbox;
                 this._filterDropDownGroup,
                 this._chorusDropDownGroup,
                 this._effectDropDownGroup,
-				this._bassDropDownGroup,
             ]);
             this._promptContainer = div({ className: "promptContainer", style: "display: none;" });
             this.mainLayer = div({ className: "beepboxEditor", tabIndex: "0" }, [
@@ -6638,10 +6496,6 @@ var beepbox;
                         this._reverbSlider,
                     ]),
                     div({ className: "selectRow" }, [
-                        span({}, [text("Riff: ")]),
-                        this._riffSlider,
-                    ]),
-                    div({ className: "selectRow" }, [
                         span({}, [text("Rhythm: ")]),
                         div({ className: "selectContainer" }, [this._partDropDown]),
                     ]),
@@ -6676,28 +6530,17 @@ var beepbox;
                 setSelectedIndex(_this._keyDropDown, _this._doc.song.key);
                 _this._tempoSlider.value = "" + _this._doc.song.tempo;
                 _this._reverbSlider.value = "" + _this._doc.song.reverb;
-				_this._riffSlider.value = "" + _this._doc.song.riff;
                 setSelectedIndex(_this._partDropDown, beepbox.Music.partCounts.indexOf(_this._doc.song.parts));
                 if (_this._doc.channel == 3) {
-                    _this._chorusDropDownGroup.style.visibility = "hidden";
-					_this._bassDropDownGroup.style.visibility = "hidden";
-                    _this._effectDropDownGroup.style.visibility = "hidden";
                     _this._filterDropDownGroup.style.visibility = "hidden";
+                    _this._chorusDropDownGroup.style.visibility = "hidden";
+                    _this._effectDropDownGroup.style.visibility = "hidden";
                     _this._waveNames.style.display = "none";
                     _this._drumNames.style.display = "block";
-                }
-                else if (_this._doc.channel == 2) {
-                    _this._chorusDropDownGroup.style.visibility = "visible";
-					_this._bassDropDownGroup.style.visibility = "visible";
-                    _this._effectDropDownGroup.style.visibility = "visible";
-                    _this._filterDropDownGroup.style.visibility = "visible";
-                    _this._waveNames.style.display = "block";
-                    _this._drumNames.style.display = "none";
                 }
                 else {
                     _this._filterDropDownGroup.style.visibility = "visible";
                     _this._chorusDropDownGroup.style.visibility = "visible";
-					_this._bassDropDownGroup.style.visibility = "hidden";
                     _this._effectDropDownGroup.style.visibility = "visible";
                     _this._waveNames.style.display = "block";
                     _this._drumNames.style.display = "none";
@@ -6722,7 +6565,6 @@ var beepbox;
                 setSelectedIndex(_this._attackDropDown, _this._doc.song.instrumentAttacks[_this._doc.channel][instrument]);
                 setSelectedIndex(_this._effectDropDown, _this._doc.song.instrumentEffects[_this._doc.channel][instrument]);
                 setSelectedIndex(_this._chorusDropDown, _this._doc.song.instrumentChorus[_this._doc.channel][instrument]);
-				setSelectedIndex(_this._bassDropDown, _this._doc.song.instrumentBassFX[_this._doc.channel][instrument]);
                 _this._channelVolumeSlider.value = -_this._doc.song.instrumentVolumes[_this._doc.channel][instrument] + "";
                 setSelectedIndex(_this._instrumentDropDown, instrument);
                 _this._piano.container.style.display = _this._doc.showLetters ? "block" : "none";
@@ -6832,9 +6674,6 @@ var beepbox;
             this._onSetReverb = function () {
                 _this._doc.history.record(new beepbox.ChangeReverb(_this._doc, parseInt(_this._reverbSlider.value)));
             };
-            this._onSetRiff = function () {
-                _this._doc.history.record(new beepbox.ChangeRiff(_this._doc, parseInt(_this._riffSlider.value)));
-            };
             this._onSetParts = function () {
                 _this._doc.history.record(new beepbox.ChangeParts(_this._doc, beepbox.Music.partCounts[_this._partDropDown.selectedIndex]));
             };
@@ -6855,9 +6694,6 @@ var beepbox;
             };
             this._onSetChorus = function () {
                 _this._doc.history.record(new beepbox.ChangeChorus(_this._doc, _this._chorusDropDown.selectedIndex));
-            };
-            this._onSetBass = function () {
-                _this._doc.history.record(new beepbox.ChangeBass(_this._doc, _this._bassDropDown.selectedIndex));
             };
             this._onSetVolume = function () {
                 _this._doc.history.record(new beepbox.ChangeVolume(_this._doc, -parseInt(_this._channelVolumeSlider.value)));
@@ -6926,7 +6762,6 @@ var beepbox;
             this._keyDropDown.addEventListener("change", this._onSetKey);
             this._tempoSlider.addEventListener("input", this._onSetTempo);
             this._reverbSlider.addEventListener("input", this._onSetReverb);
-			this._riffSlider.addEventListener("input", this._onSetRiff);
             this._partDropDown.addEventListener("change", this._onSetParts);
             this._instrumentDropDown.addEventListener("change", this._onSetInstrument);
             this._channelVolumeSlider.addEventListener("input", this._onSetVolume);
@@ -6935,7 +6770,6 @@ var beepbox;
             this._attackDropDown.addEventListener("change", this._onSetAttack);
             this._filterDropDown.addEventListener("change", this._onSetFilter);
             this._chorusDropDown.addEventListener("change", this._onSetChorus);
-			this._bassDropDown.addEventListener("change", this._onSetBass);
             this._effectDropDown.addEventListener("change", this._onSetEffect);
             this._playButton.addEventListener("click", this._togglePlay);
             this._exportButton.addEventListener("click", this._openExportPrompt);
@@ -7002,10 +6836,10 @@ var beepbox;
         };
         return SongEditor;
     }());
-    SongEditor.channelColorsDim = ["#439143", "#777744", "#8b4343", "#6f6f6f"];
-    SongEditor.channelColorsBright = ["#44ff44", "#ffff44", "#ff8844", "#aaaaaa"];
-    SongEditor.noteColorsDim = ["#439143", "#777744", "#8b4343", "#aaaaaa"];
-    SongEditor.noteColorsBright = ["#44ff44", "#ffff44", "#ff8844", "#eeeeee"];
+    SongEditor.channelColorsDim = ["#0099a1", "#a1a100", "#c75000", "#6f6f6f"];
+    SongEditor.channelColorsBright = ["#25f3ff", "#ffff25", "#ff9752", "#aaaaaa"];
+    SongEditor.noteColorsDim = ["#00bdc7", "#c7c700", "#ff771c", "#aaaaaa"];
+    SongEditor.noteColorsBright = ["#92f9ff", "#ffff92", "#ffcdab", "#eeeeee"];
     beepbox.SongEditor = SongEditor;
     var styleSheet = document.createElement('style');
     styleSheet.type = "text/css";
